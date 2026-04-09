@@ -1,3 +1,4 @@
+# Hola
 # Crear la VPC
 resource "aws_vpc" "mi_vpc" {
   cidr_block           = "10.0.0.0/16"
