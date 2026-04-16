@@ -1,3 +1,4 @@
+# Hola
 # Crear la VPC
 resource "aws_vpc" "mi_vpc" {
   cidr_block           = "10.0.0.0/16"
@@ -58,7 +59,7 @@ resource "aws_subnet" "subnet_privada_2" {
 
 # Crear un NAT Gateway
 resource "aws_eip" "nat_eip" {
-  vpc = true
+  domain = "vpc"
   tags = {
     Name = "nat-eip"
   }
